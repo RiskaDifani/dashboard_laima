@@ -1,20 +1,17 @@
+import 'package:dashboard_laima/home.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({ Key? key }) : super(key: key);
-
-  @override
-  State<HomePage> createState() => _HomePageState();
+void main() {
+  runApp(MyApp());
 }
+class MyApp extends StatelessWidget {
 
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Aplikasi Laima"),
-      ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Aplikasi Laima',
+      home: HomePage(),
     );
   }
 }
